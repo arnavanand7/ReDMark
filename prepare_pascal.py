@@ -35,10 +35,10 @@ for f in tqdm(f_list):
 
 concat_patches = np.concatenate(all_patches, axis=0)
 print('Saving mat file...')
-sio.savemat('./images/pascal_patches.mat', {'patches': concat_patches})
+sio.savemat('./content/images/pascal/pascal_patches.mat', {'patches': concat_patches})
 print('[!] First Mat file is ready.')
 
-x_train = sio.loadmat('./images/pascal/pascal_patches.mat')['patches']
+x_train = sio.loadmat('/content/images/pascal/pascal_patches.mat')['patches']
 
 means = []
 img_std = []
