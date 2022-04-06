@@ -70,6 +70,6 @@ plt.hist(img_std)
 # Save new dataset
 print('Saving mat file...')
 train_imgs = np.array(selected_img)
-sio.savemat('./images/pascal/pascal_resampled.mat', {'patches':train_imgs})
+sio.savemat('./content/images/pascal/pascal_resampled.mat', {'patches':train_imgs})
 
 print('[!] Second Mat file is ready.')
