@@ -18,9 +18,9 @@ pascal_path = './images/pascal/JPEGImages'
 f_list = [f for f in listdir(pascal_path) if isfile(join(pascal_path, f)) and f.endswith('.jpg')]
 
 # Save
-#save_path = './images/pascal'
-#if os.path.exists(save_path):
- #   os.makedirs(save_path)
+save_path = './images/pascal'
+if os.path.exists(save_path):
+   os.makedirs(save_path)
 
 all_patches = []
 c = 0
