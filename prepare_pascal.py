@@ -14,11 +14,11 @@ patch_h, patch_w = 32, 32
 # %% Prepare dataset
 
 # List all files
-pascal_path = './images/pascal/JPEGImages'
+pascal_path = './content/images/pascal/JPEGImages'
 f_list = [f for f in listdir(pascal_path) if isfile(join(pascal_path, f)) and f.endswith('.jpg')]
 
 # Save
-save_path = './images/pascal'
+save_path = './content/images/pascal'
 if os.path.exists(save_path):
    os.makedirs(save_path)
 
